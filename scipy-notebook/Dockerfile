@@ -46,6 +46,10 @@ RUN conda install --quiet --yes \
     'vincent=0.4.*' \
     'widgetsnbextension=3.5.*'\
     'xlrd=1.2.*' \
+    'soundfile' \
+    'librosa' \
+    'imblearn' \
+    'itertools' \
     && \
     conda clean --all -f -y && \
     # Activate ipywidgets extension in the environment that runs the notebook server
