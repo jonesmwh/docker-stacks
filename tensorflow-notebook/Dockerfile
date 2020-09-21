@@ -7,6 +7,10 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 # Install Tensorflow
 RUN pip install --quiet --no-cache-dir \
+    'soundfile' \
+    'librosa' \
+    'imblearn' \
+    'itertools' \
     'tensorflow==2.2.0' && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
